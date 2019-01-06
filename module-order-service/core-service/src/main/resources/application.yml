@@ -1,0 +1,23 @@
+server:
+  port: 8007
+#  context-path: /api/product
+spring:
+  application:
+    name: module-order-service
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 10
+    health-check-url-path: /actuator/health
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+

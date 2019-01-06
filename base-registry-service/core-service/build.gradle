@@ -1,0 +1,6 @@
+description = 'base-registry-service-core-service'
+
+
+dependencies {
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+}

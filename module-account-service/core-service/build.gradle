@@ -1,0 +1,13 @@
+description = 'module-account-service-core-service'
+dependencies {
+
+    compile ("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+    compile 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    compile ("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    compile ("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+    compile 'com.ctrip.framework.apollo:apollo-client:1.2.0'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.2'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compile 'org.jolokia:jolokia-core:1.6.0'
+}

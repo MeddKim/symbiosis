@@ -1,0 +1,7 @@
+description = 'base-boot-admin-core-service'
+dependencies {
+    compile ("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+    implementation('de.codecentric:spring-boot-admin-starter-server')
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compile 'org.jolokia:jolokia-core:1.6.0'
+}

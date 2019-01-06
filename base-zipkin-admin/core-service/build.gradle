@@ -1,0 +1,7 @@
+description = 'base-zipkin-admin-core-service'
+dependencies {
+    compile 'io.zipkin.java:zipkin-server'
+    compile 'io.zipkin.java:zipkin-autoconfigure-ui'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compile 'org.jolokia:jolokia-core:1.6.0'
+}
