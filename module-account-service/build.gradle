@@ -3,6 +3,7 @@ allprojects {
     apply plugin: 'idea'
     apply plugin: 'groovy'
     apply plugin: 'maven'
+    apply plugin: 'com.palantir.docker'
 }
 
 boolean includedLocalCoreDomain = false
@@ -91,8 +92,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.20.1'
     }
 }
-
-
 
